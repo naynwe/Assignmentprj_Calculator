@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="500.0" spacing="30.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
+   <children>
+      <HBox alignment="CENTER" styleClass="title-wrap">
+         <children>
+            <Label alignment="CENTER" styleClass="title" text="Calculator" textAlignment="CENTER" textFill="#2c2ea8">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="20.0" styleClass="control-wrap">
+         <children>
+            <TextField fx:id="input1" alignment="CENTER" prefWidth="170.0" />
+            <TextField fx:id="input2" prefWidth="170.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="30.0">
+         <padding>
+            <Insets bottom="20.0" left="70.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ComboBox fx:id="myoperator" prefWidth="170.0" promptText="operator" />
+            <Button fx:id="clear" mnemonicParsing="false" prefWidth="75.0" text="clear" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Label fx:id="result" text="Label" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

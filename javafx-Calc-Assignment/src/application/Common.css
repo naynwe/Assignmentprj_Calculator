@@ -1,0 +1,32 @@
+.root
+{
+	-fx-pref-width:500px;
+	-fx-pref-height:400px;
+}
+
+.title
+{
+	-fx-font-family: "Aerial";
+	-fx-font-size: 20;
+	-fx-text-fill: blue;
+}
+.title-wrap
+{
+	-fx-alignment:center;
+	-fx-padding:20px;
+	-fx-background-color: gold;
+}
+
+.control-wrap{
+	-fx-padding:10px;
+	-fx-spacing:10px;
+}
+ComboBox
+{
+	-fx-pref-width: 120px;
+}
+
+TextField
+{
+	-fx-pref-width: 140px;
+}
